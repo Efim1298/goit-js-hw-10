@@ -1,0 +1,58 @@
+.hidden {
+    display: none;
+}
+
+.error {
+    width: 600px;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    border: 4px solid red;
+}
+
+.cat-info {
+    display: flex;
+}
+
+.cat-name {
+    margin: 0;
+}
+
+.breed-select {
+    margin-bottom: 12px;
+}
+
+.cat-container-info {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+/* loader */
+
+.loader {
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    animation: skLinRotate 1s ease-in-out infinite alternate;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: #ff3d00;
+}
+
+@keyframes skLinRotate {
+
+    95%,
+    100% {
+        transform: rotate(840deg)
+    }
+}
